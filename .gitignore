@@ -1,0 +1,42 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# Common generated output
+/build/
+/dist/
+/out/
+/coverage/
+
+# Common dependency directories and caches
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Machine-specific IDE state
+.vs/
+.idea/
+*.suo
+*.user
+
+# Add language-specific rules as projects are introduced.
