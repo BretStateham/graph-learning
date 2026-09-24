@@ -1,0 +1,25 @@
+{
+  "name": "Graph Learning - Python and Jupyter",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "remote.autoForwardPorts": false,
+        "python.defaultInterpreterPath": "/opt/conda/bin/python",
+        "python.condaPath": "/opt/conda/bin/conda",
+        "python-envs.globalSearchPaths": ["/opt/conda"]
+      }
+    }
+  },
+  "postCreateCommand": "git config --global --add safe.directory '${containerWorkspaceFolder}'",
+  "forwardPorts": [8888],
+  "remoteUser": "jovyan",
+  "overrideCommand": true
+}
