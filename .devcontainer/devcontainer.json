@@ -11,6 +11,7 @@
         "ms-toolsai.jupyter"
       ],
       "settings": {
+        "remote.autoForwardPorts": false,
         "python.defaultInterpreterPath": "/opt/conda/bin/python",
         "python.condaPath": "/opt/conda/bin/conda",
         "python-envs.globalSearchPaths": ["/opt/conda"]
